@@ -484,11 +484,14 @@ main {
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .navbar-link:hover,
 .navbar-link:focus {
   color: var(--light-gray-70);
+  background-color: transparent;
 }
 
 .navbar-link.active {
@@ -841,7 +844,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .sidebar {
-    max-height: 584px;
+    max-height: 600px;
   }
 
   .sidebar-info {
