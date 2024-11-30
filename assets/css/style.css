@@ -255,8 +255,8 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px; 
+  height: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -282,6 +282,8 @@ article.active {
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .content-card::before {
@@ -293,6 +295,9 @@ article.active {
   z-index: -1;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -592,6 +597,8 @@ main {
 }
 
 .timeline-text {
+  display: flex;
+  flex-wrap: wrap;
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
